@@ -7,7 +7,7 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # Theme
-.devvars
+devvars.js
 
 # WordPress
 web/wp
