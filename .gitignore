@@ -8,6 +8,7 @@ web/app/uploads/*
 
 # Theme
 .devvars
+theme_dist/
 
 # WordPress
 web/wp
