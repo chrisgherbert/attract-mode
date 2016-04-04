@@ -29,7 +29,7 @@
   "repositories": [
     {
       "type": "composer",
-      "url": "http://wpackagist.org"
+      "url": "https://wpackagist.org"
     },
     {
       "type": "git",
@@ -46,17 +46,16 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
-    "jarednova/timber": "^0.22.5",
     "webdevstudios/cpt-core": "dev-master",
-    "webdevstudios/cmb2": "^2.1",
     "wpackagist-plugin/easy-wp-smtp": "^1.2",
     "bermanco/posts-2-posts-adapter": "dev-master",
     "bermanco/bac-timber-classes": "dev-master",
-    "wpackagist-plugin/posts-to-posts": "^1.6"
+    "wpackagist-plugin/posts-to-posts": "^1.6",
+    "timber/timber": "dev-master"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "jarednova/timber", "webdevstudios/cpt-core", "webdevstudios/cmb2", "wpackagist-plugin/posts-to-posts", "bermanco/bac-timber-classes"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "webdevstudios/cpt-core", "wpackagist-plugin/posts-to-posts"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
