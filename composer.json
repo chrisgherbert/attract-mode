@@ -1,28 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "bermanco/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
+  "description": "Berman and Company's WordPress Stack (forked from Bedrock)",
+  "homepage": "http://www.bermanco.com",
   "config": {
     "preferred-install": "dist"
   },
@@ -47,7 +28,7 @@
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
     "timber/timber": "dev-master",
-    "webdevstudios/cpt-core": "dev-master",
+    "webdevstudios/cpt-core": "^1.0",
     "webdevstudios/cmb2": "^2.1",
     "wpackagist-plugin/easy-wp-smtp": "^1.2",
     "bermanco/posts-2-posts-adapter": "dev-master",
