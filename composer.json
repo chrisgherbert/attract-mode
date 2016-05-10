@@ -27,7 +27,7 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
-    "timber/timber": "dev-master",
+    "timber/timber": "1.0-rc2",
     "webdevstudios/cpt-core": "^1.0",
     "webdevstudios/cmb2": "^2.1",
     "wpackagist-plugin/easy-wp-smtp": "^1.2",
