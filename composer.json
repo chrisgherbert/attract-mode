@@ -27,17 +27,12 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.5.2",
     "oscarotero/env": "^1.0",
-    "timber/timber": "1.0-rc2",
-    "webdevstudios/cpt-core": "^1.0",
-    "webdevstudios/cmb2": "^2.1",
-    "wpackagist-plugin/easy-wp-smtp": "^1.2",
-    "bermanco/posts-2-posts-adapter": "dev-master",
     "bermanco/bac-timber-classes": "dev-master",
     "wpackagist-plugin/posts-to-posts": "^1.6"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "webdevstudios/cpt-core", "webdevstudios/cmb2", "wpackagist-plugin/posts-to-posts"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
