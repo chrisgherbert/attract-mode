@@ -115,18 +115,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bermanco/extended-timber-classes.git",
-                "reference": "6120ebb28852a7fcd2166e8e42893bd3b6e91232"
+                "reference": "246242c1d1c64d1489845f70cf09619e1e128807"
             },
             "require": {
                 "timber/timber": "~1"
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "classes/Tools.php",
-                    "classes/BasePost.php",
-                    "classes/opengraph/Base.php"
-                ]
+                "psr-4": {
+                    "bermanco\\ExtendedTimberClasses\\": "src"
+                }
             },
             "license": [
                 "GPLv2"
@@ -135,10 +133,14 @@
                 {
                     "name": "Chris Herbert",
                     "email": "herbert@bermanco.com"
+                },
+                {
+                    "name": "Joey Nichols",
+                    "email": "nichols@bermanco.com"
                 }
             ],
             "description": "Enhanced and expanded classes for use with Timber",
-            "time": "2016-07-03 21:59:59"
+            "time": "2016-07-04 00:17:12"
         },
         {
             "name": "composer/installers",
