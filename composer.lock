@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e1d9388a249edce7490ef38d6651e069",
-    "content-hash": "3b39de7dc3ea99e408e7e4ded1af7451",
+    "hash": "ceb1d6b2db86fe918230b9cc7e984751",
+    "content-hash": "678eb64e24e5f0727e61f8c4d27d7288",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -111,11 +111,11 @@
         },
         {
             "name": "bermanco/bac-timber-classes",
-            "version": "dev-master",
+            "version": "v1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bermanco/extended-timber-classes.git",
-                "reference": "246242c1d1c64d1489845f70cf09619e1e128807"
+                "reference": "c90f7fa19e8af63a857c5373549c8156b6a860ab"
             },
             "require": {
                 "timber/timber": "~1"
@@ -140,7 +140,7 @@
                 }
             ],
             "description": "Enhanced and expanded classes for use with Timber",
-            "time": "2016-07-04 00:17:12"
+            "time": "2016-07-04 00:31:21"
         },
         {
             "name": "composer/installers",
@@ -244,16 +244,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.2",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add"
+                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e992d00a34ea84d55c80023d27d5bcb839069add",
-                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
+                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
                 "shasum": ""
             },
             "require": {
@@ -277,7 +277,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-05-06 18:16:20"
+            "time": "2016-06-21 16:31:21"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -740,9 +740,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "bermanco/bac-timber-classes": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
