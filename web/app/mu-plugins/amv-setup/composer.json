@@ -1,0 +1,15 @@
+{
+    "name": "bermanco/bac-cpt",
+    "description": "Defines custom post types, taxonomies, etc.",
+    "type": "wordpress-plugin",
+    "require": {
+        "webdevstudios/cmb2": "^2.1"
+    },
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Joey Nichols",
+            "email": "nichols@bermanco.com"
+        }
+    ]
+}

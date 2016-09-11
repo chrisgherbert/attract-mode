@@ -1,0 +1,43 @@
+{% extends 'single.twig' %}
+
+{% block content %}
+
+	<div class="container">
+
+		<h1 class="c-single-title c-single-title--video">
+			{{ post.title }}
+		</h1><!-- /.c-single-title c-single-title--video -->
+
+		{% if post.get_youtube_url %}
+			{{ post.get_youtube_url|apply_filters('the_content') }}
+		{% endif %}
+
+		{% if post.content %}
+
+			<div class="c-the-content c-the-content--video">
+				{{ post.content }}
+			</div><!-- /.c-the-content c-the-content--video -->
+
+		{% endif %}
+
+		<h4>Game(s)</h4>
+
+		{% for game in post.get_all_games %}
+			<li><a href="{{ game.link }}">{{ game }}</a></li>
+		{% endfor %}
+
+		<h4>Releases(s)</h4>
+
+		{% for release in post.get_releases %}
+			<li><a href="{{ release.link }}">{{ release }}</a></li>
+		{% endfor %}
+
+		<h4>System(s):</h4>
+
+		{% for system in post.get_all_systems %}
+			<li><a href="{{ system.link }}">{{ system }}</a></li>
+		{% endfor %}
+
+	</div><!-- /.container -->
+
+{% endblock %}

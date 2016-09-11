@@ -1,0 +1,37 @@
+<header class="c-main-header" id="main-header">
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<div class="col-md-3">
+
+				<a href="{{ site.url }}" rel="home">
+					<img class="c-main-header__logo" src="{{ theme.link }}/assets/img/logo.svg" alt="{{ site.name }}" role="banner">
+				</a>
+
+			</div><!-- /.col-md-3 -->
+
+			<div class="col-md-9">
+
+				{% if main_menu %}
+					<nav class="c-main-menu" role="navigation">
+						<ul class="c-main-menu__list">
+							{% for item in main_menu.items %}
+								<li class="c-main-menu__item {{ item.classes|join(' ') }}">
+									<a class="c-main-menu__link" href="{{ item.url }}">
+										{{ item.title }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</nav><!-- /.main-header__nav -->
+				{% endif %}
+
+			</div><!-- /.col-md-9 -->
+
+		</div><!-- /.row -->
+
+	</div><!-- /.container-fluid -->
+
+</header><!-- /#main-header.c-main-header -->

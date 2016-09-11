@@ -1,0 +1,9 @@
+{
+	"name": "timberTheme",
+	"private": true,
+	"dependencies": {
+		"bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+		"font-awesome": "fontawesome#~4.5.0",
+		"jquery-smooth-scroll": "~1.5.6"
+	}
+}

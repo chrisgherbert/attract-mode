@@ -1,0 +1,78 @@
+/////////////////
+// Main Header //
+/////////////////
+
+.c-main-header {
+	padding: $spacing/4 0;
+	margin-bottom: $spacing/2;
+}
+
+.c-main-header__logo {
+	max-width: 200px;
+}
+
+///////////////
+// Main Menu //
+///////////////
+
+.c-main-menu {
+	text-align: right;
+}
+
+.c-main-menu__list {
+	@include strip-ul;
+}
+
+.c-main-menu__item {
+	display: inline-block;
+	margin-right: $spacing/2;
+	&:last-child { margin-right: 0; }
+}
+
+.c-main-menu__link {
+	display: block;
+}
+
+///////////
+// Tease //
+///////////
+
+.c-tease__image {
+	margin-bottom: $spacing/3;
+}
+
+.c-tease__overline {
+	display: block;
+	font-family: $font-family-sans-serif;
+	margin-bottom: $spacing/4;
+}
+
+.c-tease__title {
+	margin: 0 0 $spacing/6;
+	a {
+		@include reverse-links;
+	}
+}
+
+.c-tease__underline {
+	font-style: italic;
+	margin-bottom: $spacing/6;
+}
+
+// Responsive Video Embeds
+
+.c-video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100%;
+	}
+}
+
+

@@ -1,0 +1,60 @@
+{# sample options:
+	classes: tease--article,
+	image: post.thumbnail, (TimberImage object)
+	overline: post.get_overline,
+	overline_link: post.get_overline_link,
+	title: post.title,
+	underline: post.get_underline,
+	link: post.link,
+	content: post.content,
+	heading: 3
+#}
+
+{# Defaults #}
+{% if heading is not defined %}
+	{% set heading = 4 %}
+{% endif %}
+
+<article class="c-tease {{ classes }}">
+
+	{% block tease_interior %}
+
+			{% if image %}
+				<a href="{{ link }}">
+					<img class="c-tease__image" src="{{ image.get_src()|tojpg|resize(300, 230)|default('') }}" alt="{{ image.alt }}">
+				</a>
+			{% endif %}
+
+			{% if overline %}
+				<div class="c-tease__overline">
+					{% if overline_link %}
+						<a href="{{ overline_link }}">
+							{{ overline }}
+						</a>
+					{% else %}
+						{{ overline }}
+					{% endif %}
+				</div>
+			{% endif %}
+
+			<h{{ heading }} class="c-tease__title">
+				<a href="{{ link }}">
+					{{ title }}
+				</a>
+			</h{{ heading }}>
+
+			{% if underline %}
+				<div class="c-tease__underline">
+					{{ underline }}
+				</div>
+			{% endif %}
+
+			{% if content %}
+				<div class="c-tease__content">
+					{{ content }}
+				</div>
+			{% endif %}
+
+	{% endblock %}
+
+</article>

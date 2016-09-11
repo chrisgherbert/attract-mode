@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<div class="container">
+
+		<h2>Videos</h2>
+
+		<div class="row">
+
+			{% for video in videos %}
+
+				<div class="col-sm-2">
+
+					<a href="{{ video.link }}">
+						<img src="{{ video.thumbnail.src|resize(848, 480, 'center') }}" alt="Video Thumbnail">
+					</a>
+
+					<h5>
+						<a href="{{ video.link }}">{{ video }}</a>
+					</h5>
+
+				</div><!-- /.col-sm-4 -->
+
+			{% endfor %}
+
+		</div><!-- /.row -->
+
+	</div><!-- /.container -->
+
+{% endblock %}
